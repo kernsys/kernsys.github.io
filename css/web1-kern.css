@@ -997,7 +997,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: 200px;
-  padding: 5px 5px 20px;
+  padding: 10px 5px 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1042,7 +1042,7 @@ figcaption {
 
 .dropdown-link:hover {
   border-style: none none solid;
-  border-width: 3px 3px 2px;
+  border-width: 3px 3px 1px;
   border-color: #394459;
   opacity: 0.9;
   color: #394459;
@@ -1618,6 +1618,10 @@ figcaption {
     margin-right: 0px;
   }
 
+  .dropdown-menu {
+    width: 240px;
+  }
+
   .dropdown-link {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1640,6 +1644,10 @@ figcaption {
     top: 0%;
     right: auto;
     bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .team-member-bio-block {
@@ -1906,7 +1914,10 @@ figcaption {
   .dropdown-block {
     left: auto;
     top: 50px;
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .team-member-bio-block {
