@@ -1545,6 +1545,7 @@ figcaption {
   .center-block {
     position: relative;
     max-height: none;
+    padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
     -webkit-box-orient: horizontal;
@@ -1619,6 +1620,7 @@ figcaption {
   }
 
   .dropdown-menu {
+    display: none;
     width: 240px;
   }
 
@@ -1835,7 +1837,7 @@ figcaption {
   }
 
   .center-block {
-    margin-top: 10px;
+    margin-top: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1898,10 +1900,7 @@ figcaption {
   }
 
   .dropdown-menu {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
   }
 
   .dropdown-icon-container {
