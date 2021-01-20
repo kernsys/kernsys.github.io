@@ -364,7 +364,7 @@ figcaption {
 .footer {
   position: relative;
   left: 0px;
-  top: 40px;
+  top: 49px;
   right: auto;
   bottom: 0%;
   display: -webkit-box;
@@ -386,6 +386,7 @@ figcaption {
 
 .splash-logo-block {
   width: 220px;
+  margin-bottom: 40px;
 }
 
 .button-image {
@@ -595,10 +596,30 @@ figcaption {
 }
 
 .logo-column.splash {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 420px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .main-block {
@@ -630,8 +651,6 @@ figcaption {
 .main-block.splash {
   position: relative;
   width: auto;
-  height: auto;
-  min-height: auto;
   padding-right: 40px;
   padding-left: 40px;
   -webkit-box-pack: center;
@@ -737,6 +756,10 @@ figcaption {
   justify-content: flex-start;
 }
 
+.center-block.splash {
+  max-height: none;
+}
+
 .header-logo-block {
   width: 280px;
 }
@@ -768,6 +791,7 @@ figcaption {
 .nav-column.splash {
   position: relative;
   width: 360px;
+  height: 420px;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -815,7 +839,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 340px;
+  width: 320px;
   height: 100%;
   max-width: 100%;
   margin-right: 40px;
@@ -1146,6 +1170,7 @@ figcaption {
   border-radius: 2px;
   color: #394459;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .news-item:hover {
@@ -1266,6 +1291,44 @@ figcaption {
 
 ._404-header {
   margin-bottom: 40px;
+}
+
+.link-block-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2px;
+  padding: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d6d6d6;
+  border-radius: 10px;
+  color: #394459;
+  font-size: 20px;
+  line-height: 22px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-block-item:hover {
+  border-color: #394459;
+  background-color: #f2f5fa;
+  color: #000;
+}
+
+.link-block-item.no-link {
+  cursor: default;
+}
+
+.link-block-item.no-link:hover {
+  color: #394459;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -1558,6 +1621,7 @@ figcaption {
   .dropdown-link {
     padding-top: 5px;
     padding-bottom: 5px;
+    letter-spacing: 1px;
   }
 
   .dropdown-main-nav {
@@ -1869,6 +1933,14 @@ figcaption {
   .news-item-column.source {
     max-width: none;
     min-width: auto;
+  }
+
+  .link-block-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
