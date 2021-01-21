@@ -1412,7 +1412,7 @@ figcaption {
   display: flex;
   max-width: 350px;
   margin-bottom: 2px;
-  padding: 10px;
+  padding: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1436,7 +1436,7 @@ figcaption {
 
 .dev-tool-block:hover {
   border-color: #394459;
-  background-color: #f2f5fa;
+  background-color: #f7faff;
   color: #000;
 }
 
@@ -1450,11 +1450,14 @@ figcaption {
 }
 
 .dev-tool-tittle {
-  margin-top: 5px;
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 400;
   text-decoration: none;
+}
+
+.dev-tool-text {
+  font-size: 16px;
 }
 
 @media screen and (max-width: 991px) {
