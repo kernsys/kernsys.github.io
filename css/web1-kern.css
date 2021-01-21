@@ -261,6 +261,7 @@ figcaption {
 
 .team-member-title-wrap {
   display: block;
+  margin-top: 5px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -276,7 +277,7 @@ figcaption {
   margin-top: 5px;
   opacity: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
@@ -354,13 +355,9 @@ figcaption {
   margin-bottom: 0px;
 }
 
-.header.hide {
-  display: none;
-}
-
 .footer {
   position: relative;
-  left: 0px;
+  left: auto;
   top: 49px;
   right: auto;
   bottom: 0%;
@@ -370,15 +367,15 @@ figcaption {
   display: flex;
   width: 100%;
   max-width: 1000px;
+  padding-right: 20px;
   padding-bottom: 10px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  background-color: transparent;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .splash-logo-block {
@@ -710,6 +707,7 @@ figcaption {
 
 .paragraph-text {
   margin-bottom: 28px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -871,6 +869,7 @@ figcaption {
 
 .team-bio-text {
   width: 100%;
+  line-height: 24px;
   text-align: left;
 }
 
@@ -975,7 +974,7 @@ figcaption {
   cursor: default;
 }
 
-.full-screen-background.arthur {
+.full-screen-background.show {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1100,15 +1099,16 @@ figcaption {
 .dropdown-block {
   position: absolute;
   left: auto;
-  top: 100%;
+  top: 105%;
   right: 0%;
   bottom: auto;
   display: none;
 }
 
-.team-member-bio-block {
+.team-member-bio {
   overflow: auto;
   margin-top: 20px;
+  font-size: 18px;
 }
 
 .section-block {
@@ -1229,10 +1229,6 @@ figcaption {
   opacity: 0.71;
 }
 
-.news-item-column.link-icon.nolink {
-  opacity: 0;
-}
-
 .news-item-text {
   text-decoration: none;
 }
@@ -1330,49 +1326,6 @@ figcaption {
   margin-bottom: 40px;
 }
 
-.link-block-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2px;
-  padding: 7px 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #d6d6d6;
-  border-radius: 6px;
-  color: #394459;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: left;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.link-block-item:hover {
-  border-color: #394459;
-  background-color: #f2f5fa;
-  color: #000;
-}
-
-.link-block-item.no-link {
-  cursor: default;
-}
-
-.link-block-item.no-link:hover {
-  color: #394459;
-  text-decoration: none;
-}
-
 .error-message {
   position: relative;
   width: 100%;
@@ -1436,17 +1389,8 @@ figcaption {
 
 .dev-tool-block:hover {
   border-color: #394459;
-  background-color: #f7faff;
+  background-color: #fff;
   color: #000;
-}
-
-.dev-tool-block.no-link {
-  cursor: default;
-}
-
-.dev-tool-block.no-link:hover {
-  color: #394459;
-  text-decoration: none;
 }
 
 .dev-tool-tittle {
@@ -1470,10 +1414,6 @@ figcaption {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-
-  .footer {
-    margin-right: 30px;
   }
 
   .nav-text {
@@ -1581,10 +1521,6 @@ figcaption {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-  }
-
-  .team-member-name {
-    font-size: 16px;
   }
 
   .team-member-name.large {
@@ -1737,6 +1673,7 @@ figcaption {
 
   .team-bio-text {
     max-height: 30vh;
+    line-height: 24px;
   }
 
   .team-member-grid-cell {
@@ -1764,7 +1701,7 @@ figcaption {
     width: auto;
     height: auto;
     margin: 10px 20px;
-    padding: 20px 20px 40px;
+    padding: 10px 20px 40px;
   }
 
   .window-close-button {
@@ -1801,20 +1738,19 @@ figcaption {
   }
 
   .dropdown-block {
-    left: auto;
-    top: 100%;
-    right: 0%;
-    bottom: auto;
     display: none;
   }
 
-  .team-member-bio-block {
+  .team-member-bio {
     overflow: scroll;
     margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
   .section-block {
-    width: 400px;
+    width: auto;
+    min-width: auto;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -1835,6 +1771,10 @@ figcaption {
     margin-bottom: 20px;
   }
 
+  .member-full-screen.arthur {
+    display: none;
+  }
+
   .header-2-container {
     margin-bottom: 10px;
     border-bottom: 2px solid #394459;
@@ -1847,11 +1787,19 @@ figcaption {
     line-height: 52px;
   }
 
+  .team-member-title {
+    font-size: 16px;
+  }
+
   .team-member-title-wrap {
     position: relative;
     height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .team-member-name {
+    font-size: 20px;
   }
 
   .header {
@@ -2034,14 +1982,12 @@ figcaption {
   }
 
   .team-image-block {
-    width: 100px;
-    min-height: auto;
-    min-width: auto;
+    width: 200px;
     margin-right: 0px;
   }
 
   .team-image-block.large {
-    width: 140px;
+    width: 200px;
     margin-right: 0px;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -2057,15 +2003,25 @@ figcaption {
 
   .team-member-grid {
     position: relative;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .full-screen-center-block {
+    top: auto;
     max-height: 80vh;
+    margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
     padding-right: 30px;
     padding-bottom: 40px;
     padding-left: 30px;
+  }
+
+  .window-close-button {
+    width: 35px;
+    height: 35px;
+    margin-right: -15px;
   }
 
   .dropdown-menu {
@@ -2086,18 +2042,17 @@ figcaption {
   }
 
   .dropdown-block {
-    left: auto;
-    top: 50px;
     display: none;
     margin-left: -5px;
   }
 
-  .team-member-bio-block {
+  .team-member-bio {
     margin-top: 10px;
   }
 
   .section-block {
-    width: auto;
+    width: 100%;
+    min-width: auto;
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -2130,12 +2085,8 @@ figcaption {
     min-width: auto;
   }
 
-  .link-block-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  .member-full-screen.pradeep {
+    display: none;
   }
 
   .dev-tool-block {
