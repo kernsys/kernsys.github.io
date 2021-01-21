@@ -526,6 +526,7 @@ figcaption {
 .nav-button.w--current {
   position: relative;
   left: 8px;
+  margin-top: 3px;
   margin-bottom: 5px;
   opacity: 1;
   -webkit-transform: scale(1.1);
