@@ -379,7 +379,7 @@ figcaption {
 }
 
 .splash-logo-block {
-  width: 220px;
+  width: 230px;
   margin-bottom: 60px;
 }
 
@@ -625,7 +625,6 @@ figcaption {
   display: flex;
   width: 100%;
   padding-right: 90px;
-  padding-bottom: 20px;
   padding-left: 90px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -662,7 +661,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   overflow: auto;
-  max-height: 70vh;
+  max-height: 75vh;
   padding-right: 20px;
   padding-left: 20px;
   -webkit-box-orient: vertical;
@@ -746,7 +745,6 @@ figcaption {
   display: flex;
   overflow: visible;
   width: 100%;
-  max-height: 70vh;
   max-width: 1000px;
   padding-top: 20px;
   -webkit-box-pack: start;
@@ -832,6 +830,9 @@ figcaption {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  border: 0px solid #bdbdbd;
+  border-radius: 16px;
+  background-color: #bdbdbd;
 }
 
 .team-image-block.large {
@@ -861,9 +862,7 @@ figcaption {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #bdbdbd;
+  border: 1px solid #bdbdbd;
   border-radius: 16px;
 }
 
@@ -879,7 +878,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 15px;
+  padding: 15px 10px 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -898,8 +897,6 @@ figcaption {
   display: grid;
   width: 100%;
   grid-auto-columns: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
@@ -1379,6 +1376,7 @@ figcaption {
   border-width: 2px;
   border-color: #d6d6d6;
   border-radius: 6px;
+  opacity: 0.9;
   color: #394459;
   font-size: 18px;
   line-height: 22px;
